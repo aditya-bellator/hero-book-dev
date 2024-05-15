@@ -1,4 +1,7 @@
-import React from 'react'
+import React from 'react' 
+
+// style
+import "./styles.scss"
 
 const Sider = () => {
   return (
