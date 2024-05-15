@@ -1,0 +1,36 @@
+.navbar-container {
+    width: calc(100% - 20px);
+    display: flex;
+    justify-content: space-between;
+background: black;
+padding: 10px;
+    .navbar-left-col {
+        width: 30%;
+        img{
+            width: 50%;
+        }
+    }
+    .navbar-right-col {
+        width: 70%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        .search-bar {
+        color: white;
+        }
+        .list{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            li{
+                list-style: none;
+                color: white;
+                &:nth-child(2){
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+ 
+}
