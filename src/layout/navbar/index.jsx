@@ -1,8 +1,19 @@
+import  { useState } from "react";
+import ZoomInIcon from "@mui/icons-material/ZoomIn";
+import ClearIcon from "@mui/icons-material/Clear"; // Import the clear icon
+import "./styles.scss";
+
 import { logo } from "../../assets"
-import ZoomInIcon from '@mui/icons-material/ZoomIn';
 ////styles
 import "./styles.scss"
 const Navbar = () => {
+  const [searchValue, setSearchValue] = useState("");
+
+  // Function to clear the search input
+  const clearSearch = () => {
+    setSearchValue("");
+  };
+
   return (
     <div className="navbar-container">
       <div className="navbar-left-col">
@@ -10,15 +21,21 @@ const Navbar = () => {
       </div>
       <div className="navbar-right-col">
         <div className="search-bar">
-          <ZoomInIcon/>
-
+          <input
+            type="text"
+            placeholder="Search here"
+            value={searchValue}
+            onChange={(e) => setSearchValue(e.target.value)}
+          />
+          {searchValue && <ClearIcon onClick={clearSearch} />}
+          <ZoomInIcon />
         </div>
         <ul className="list">
           <li>
             <span>Rule</span>
             <span>Download Apk</span>
           </li>
-          <li >
+          <li>
             <span>Balance:300</span>
             <span>Exp:300</span>
           </li>
@@ -26,7 +43,7 @@ const Navbar = () => {
         </ul>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
