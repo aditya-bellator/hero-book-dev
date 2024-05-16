@@ -2,10 +2,13 @@ import React from 'react'
 
 // style
 import "./styles.scss"
+import AccordionUsage from '../../components/siderAccordion/SiderAcordion'
 
 const Sider = () => {
   return (
-    <div>Sider</div>
+    <div>
+      <AccordionUsage/>
+    </div>
   )
 }
 

@@ -2,6 +2,8 @@
 import Blink from "../../components/blink/Blink.jsx";
 import HomeTab from "../../components/hometab/HomeTab.jsx";
 
+import OddsRow from "../../components/odds/OddsRow.jsx";
+import OddsRowHeading from "../../components/odds/OddsRowHeading.jsx";
 const Home = () => {
   return (
     <>
@@ -12,6 +14,11 @@ const Home = () => {
    <Blink/>
     </div>
     <HomeTab/>
+  <OddsRowHeading/>
+    <OddsRow/>
+    <OddsRow/>
+    <OddsRow/>
+    <OddsRow/>
     </>
   );
 };

@@ -4,6 +4,10 @@ import ZoomInIcon from "@mui/icons-material/ZoomIn";
 import ClearIcon from "@mui/icons-material/Clear"; // Import the clear icon
 import "./styles.scss";
 
+import { logo } from "../../assets"
+import ZoomInIcon from '@mui/icons-material/ZoomIn';
+////styles
+import "./styles.scss"
 const Navbar = () => {
   const [searchValue, setSearchValue] = useState("");
 

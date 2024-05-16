@@ -1,0 +1,46 @@
+.panel1-header{
+    min-height: 30px !important;
+}
+
+.list2{
+    height: 0px;
+    overflow: hidden;
+}
+.list3{
+
+    height: auto;
+    overflow: hidden;
+}
+.matchListOpen{
+    height: auto;
+    overflow: hidden;
+    border-top: 1px solid #999;
+   
+}
+.matchListClose{
+    height: 0;
+    overflow: hidden;
+  
+}
+.match-list-accordion{
+    background-color: "#bbb";
+    .st-list{
+        border-bottom: 1px solid #999;
+    }
+    span{
+        padding-left: 10px;
+    }
+   
+    p{
+        margin: 0%;
+        padding: 0%;
+        padding-left: 10px;
+    }
+    .nd-list{
+padding-left: 20px;
+    }
+    .nested-list{
+        padding-left: 30px;
+        font-size: .875rem;
+    }
+}
