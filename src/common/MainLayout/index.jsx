@@ -13,7 +13,7 @@ const MainLayout = () => {
         <Navbar/>
         <SubNavbar/>
       </div>
-      <div className="main-layout-col mt-[.3125rem]">
+      <div className="main-layout-col mt-[.3125rem] mr-[.3125rem]">
 
       <div className="main-layout-sider">
         <Sider/>

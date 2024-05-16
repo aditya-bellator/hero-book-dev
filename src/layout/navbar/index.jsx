@@ -1,4 +1,4 @@
-import { logo } from "../../assets/img"
+import { logo } from "../../assets"
 import ZoomInIcon from '@mui/icons-material/ZoomIn';
 ////styles
 import "./styles.scss"

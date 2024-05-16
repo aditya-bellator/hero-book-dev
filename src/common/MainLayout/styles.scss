@@ -4,11 +4,12 @@
     }
     .main-layout-col{
         display:flex;
+        gap: 5px;
         .main-layout-sider{
-            width: 20%;
+            width: 15%;
         }
         .main-layout-content{
-            width: 80%;
+            width: 85%;
         }
     }
 }
