@@ -40,6 +40,12 @@
 
       li {
         list-style: none;
+    .navbar-right-col {
+        width: 70%;
+        display: flex;
+        justify-content:flex-end;
+        align-items: center;
+        .search-bar {
         color: white;
 
         &:nth-child(2) {
@@ -50,3 +56,4 @@
     }
   }
 }
+  }}
