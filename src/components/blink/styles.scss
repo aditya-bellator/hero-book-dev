@@ -1,0 +1,49 @@
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+    }
+    .blink_me {
+        animation: blink 1s linear infinite;
+        display: flex;
+        align-items: center;
+    }
+    .latest-events {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .latest-events-items {
+        background-color: #384b5e;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        color: #fff;
+        padding: 5px;
+        border-radius: 4px;
+        .icon{
+          padding-inline: 10px;
+        }
+        
+        .MuiSvgIcon-root {
+         
+          height: 20px;
+          width: 20px;
+          fill: white;
+          margin-right: 10px; 
+        }
+        
+        span {
+          height: auto;
+          margin-left: 3rem;
+          max-width: calc(100% - 42px);
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          width: 40%;
+        }
+      }
+      
