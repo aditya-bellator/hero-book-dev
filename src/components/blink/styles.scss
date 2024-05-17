@@ -16,34 +16,40 @@
         align-items: center;
       }
       
-      .latest-events-items {
-        background-color: #384b5e;
+      .latest-event-item {
+        flex: 1;
+        max-width: 100%;
+        min-width: calc(20% - 10px);
         display: flex;
-        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
         align-items: center;
-        color: #fff;
         padding: 5px;
+        background: #2C3E50;
         border-radius: 4px;
-        .icon{
-          padding-inline: 10px;
+        color: #FFFFFF;
+        margin-bottom: 5px;
+        a {
+          color: var(--text-secondary);
+          font-size: 14px;
+          font-weight: bold;
+          text-align: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          span {
+            margin-left: 5px;
+            white-space: nowrap;
+            height: auto;
+            max-width: calc(100% - 42px);
+            width: 100%;
+            text-overflow: ellipsis;
+            overflow: hidden;
         }
-        
-        .MuiSvgIcon-root {
-         
-          height: 20px;
-          width: 20px;
-          fill: white;
-          margin-right: 10px; 
+          .me-1 {
+            margin-right: .25rem !important;
         }
-        
-        span {
-          height: auto;
-          margin-left: 3rem;
-          max-width: calc(100% - 42px);
-          overflow: hidden;
-          text-overflow: ellipsis;
-          white-space: nowrap;
-          width: 40%;
-        }
+      }
       }
       

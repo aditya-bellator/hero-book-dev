@@ -12,7 +12,13 @@
             white-space: nowrap;
         }
         .icon-div{
-           
+            .active-match {
+                background-color: #28a745;
+                height: 10px;
+                width: 10px;
+                display: block;
+                border-radius: 100px;
+            }
             img{
                 width: 20px;
             }

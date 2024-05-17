@@ -1,0 +1,16 @@
+export const Array = [
+  "All",
+  "Live",
+  "Mixes",
+  "Music",
+  "Dramedy",
+  "Gaming",
+  "Deep House",
+  "Mantras",
+  "BollyWood Music",
+  "Arjit Singh",
+  "Indian pop Music",
+  "Pubg Mobile",
+  "Smart Phone",
+  "Scene",
+];
