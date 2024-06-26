@@ -1,0 +1,16 @@
+.casino-list-item{
+    width: calc(16.66% - 10px);
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    position: relative;
+    &:nth-child(1){
+margin-left: 0px;
+    }
+.casino-list-item-banner{
+    padding-top: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+}

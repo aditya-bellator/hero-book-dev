@@ -6,6 +6,7 @@ import Navbar from '../../layout/navbar';
 import SubNavbar from '../../layout/subNavbar';
 ////styles
 import "./styles.scss"
+import Footer from '../../layout/footer';
 const MainLayout = () => {
   return (
     <div className='main-layout'>
@@ -22,7 +23,7 @@ const MainLayout = () => {
       <Outlet/>
       </div>
       </div>
-      
+      <Footer/>
       </div>
   )
 }

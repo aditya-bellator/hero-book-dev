@@ -5,8 +5,10 @@ import { bmIcon, facebook } from "../../assets";
 import OddsButton from "./OddsButton";
 ////styles
 import "./styles.scss";
+import { Link } from "react-router-dom";
 const OddsRow = () => {
   return (
+    <Link to={"/game-detail"}> 
     <div className="odds-row-container w-full flex justify-between gap-4">
       <div className="odds-row-left-col w-[60%] flex justify-between pl-2 items-center">
         <span className="text-[14px]">Sunrisers Hyderabad v Gujarat Titans / 16/05/2024, 19:30:00</span>
@@ -32,6 +34,7 @@ const OddsRow = () => {
         </ul>
       </div>
     </div>
+    </Link>
   );
 };
 

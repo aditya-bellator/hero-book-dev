@@ -1,0 +1,53 @@
+@keyframes blinktext {
+    0% {
+        opacity: 1;
+        color: red;
+    }
+    50% {
+        opacity: 1;
+        color: yellow;
+    }
+    100% {
+        opacity: 1;
+        color: red;
+    }
+}
+
+
+
+.game-detail-container{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    .game-detail-left-col{
+        width: 68%;
+        .game-header {
+            background-color: #2C3E50;
+            color: white;
+            padding: 5px 10px;
+            font-size: 15px;
+            font-weight: bold;
+            text-transform: uppercase;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: calc(100% - 0px);
+         
+        }
+    }
+    .game-detail-right-col{
+        width: 32%;
+        svg{
+            font-size: 18px;
+            margin-right: .25rem;
+        }
+        .bet-nation-game-name{
+            div{
+                font-size: 18px;
+                animation: blinktext normal 1s infinite ease-in-out;
+                text-decoration: underline;
+                line-height: 1.5;
+            }
+        }
+    }
+}

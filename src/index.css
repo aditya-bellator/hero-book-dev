@@ -7,6 +7,18 @@ body{
   padding: 0%;
   box-sizing: border-box;
 }
+.back2{
+  background-color: #72bbef7f;
+}
+.back1{
+  background-color: #72bbefbf;
+}
+.lay1{
+  background-color: #faa9babf;
+}
+.lay2 {
+  background-color: #faa9ba7f !important;
+}
 
 @tailwind base;
 @tailwind components;

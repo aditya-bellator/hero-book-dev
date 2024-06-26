@@ -10,17 +10,19 @@ export const SliderContainer = styled.div`
     display: none;
   }
   .left-slider-btn {
-    width: 5%;
+    width:8%;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    background-image: linear-gradient(to right, #0088cc82, #cccccc);
     svg {
       color: white;
-      font-size: 29px;
+      font-size: 19px;
       position:absolute;
       z-index:1;
+      color:black;
     }
     &::after {
       position: absolute;
@@ -34,17 +36,19 @@ export const SliderContainer = styled.div`
     }
   }
   .right-slider-btn {
-    width: 5%;
+    width: 8%;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: linear-gradient(to right, #cccccc, #0088cc82);
     svg {
       color: white;
-      font-size: 24px;
+      font-size: 19px;
       position:absolute;
       z-index:1;
       cursor: pointer;
+      color:black;
     }
     &::after {
       position: absolute;
@@ -54,11 +58,7 @@ export const SliderContainer = styled.div`
       /* background-color: red; */
       height: 100%;
       cursor: pointer;
-      background: linear-gradient(
-        to left,
-        #0f0f0f 20%,
-        rgba(33, 33, 33, 0) 80%
-      );
+     
     }
   }
   .middle-slider-data {

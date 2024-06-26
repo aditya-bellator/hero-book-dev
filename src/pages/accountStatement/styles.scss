@@ -1,0 +1,81 @@
+
+.satement-container{
+
+box-shadow: 0 0 5px #a4a4a4;
+
+.satement-header{
+    border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+    background-color:#2C3E50;
+    color: #FFFFFF;
+    padding: .5rem 1rem;
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+    .header-title{
+
+        font-size: 19px;
+    font-weight: 400;
+    margin-bottom: 0;
+    }
+}
+.statement-body{
+  
+}
+}
+
+.select{
+    width: 25%;
+ 
+}
+
+
+
+.statement-form{
+
+    .date-filter-row{
+        .date-picker{
+            border: 1px solid #dbdbdb;
+            height: 38px;
+            width: 16.66666667%;
+            border-radius: 2px;
+            overflow: hidden;
+            .react-datepicker__calendar-icon{
+                font-size: 17px;
+            }
+            .react-datepicker__view-calendar-icon input{
+        
+                padding: 6px 10px 5px 7px;
+                width: 100%;
+                outline: none;
+                
+            }
+        }
+    }
+    .entries-row{
+        .entries-left-col{
+         select{
+            padding: 5px 2px 5px 2px;
+            width: 12%;
+            border: 1px solid #dbdbdb;
+         }
+        }
+    }
+}
+.form-btn{
+    width: 14.66666667%;
+    .btn{
+        width: 100%;
+        background-color: #0088CC;
+        color:#FFFFFF;
+        border-color: #0088CC;
+        height: 38px;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        border-radius: .25rem;
+       }
+}
+
+.calnder{
+    position: absolute;
+    right: 0%;
+    top: 0%;
+}

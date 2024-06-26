@@ -3,8 +3,19 @@
   display: flex;
   justify-content: space-between;
   background: black;
+  padding: 15px;
+  position: relative;
+.news{
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+  width: 50%;
+  font-size: 14px;
+  font-style: italic;
+  z-index: 1;
+  color: white;
   padding: 10px;
-
+}
   .navbar-left-col {
     width: 30%;
 
@@ -18,33 +29,82 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    .list{
+      display: flex;
+      color: white;
+      align-items: center;
+      line-height: 19px;
+      li{
+        margin-left: 1rem;
+        .bold-b{
+
+          font-weight: bold;
+        }
+        &:nth-child(1){
+          flex-direction: column;
+          display: flex;
+          font-weight: bold;
+
+
+        }
+        &:nth-child(2){
+          flex-direction: column;
+          display: flex;
+
+        }
+      }
+    }
 
     .search-bar {
       position: relative;
       color: white;
       transition: width 1.4s linear;
       -webkit-transition: width 1.4s linear;
-      input {
+      display: flex;
+      align-items: center;
+      .open-search {
         border-radius: 5px;
         width: 270px;
-        padding: 0.375rem 0.75rem;
+        box-shadow: 0 0 5px #6f6f6f;
         outline: none;
         color: #000;
+        position: relative;
+        transition: width 1s;
+        height: 35px;
+        padding-left: 10px;
       }
-    }
-    .navbar-right-col {
-        width: 70%;
-        display: flex;
-        justify-content:flex-end;
-        align-items: center;
-        .search-bar {
-        color: white;
+      .close-search {
+        border-radius: 5px;
+        height: 35px;
+        width: 0px;
+        padding: 0;
+        outline: none;
+        color: #000;
+        position: relative;
+        transition: width 1s;
+        box-shadow: 0 0 5px #6f6f6f;
+        padding-left: 0px;
 
-        &:nth-child(2) {
-          display: flex;
-          flex-direction: column;
+
+      }
+      .cross-icon{
+        position: absolute;
+        right: 12%;
+        top: 45%;
+        transform: translateY(-50%);
+        svg{
+          color: #0d6efd;
+          font-size: 18px;
+          font-weight: bolder;
+        }
+      }
+      .search-icon{
+        svg{
+
+          font-size: 30px;
         }
       }
     }
+    
   }
 }

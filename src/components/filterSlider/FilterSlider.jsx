@@ -36,16 +36,16 @@ const FilterSlider = () => {
     <div>
       <styled.SliderContainer className="slider-container">
       
-          <div className="left-slider-btn">
-            <KeyboardArrowLeftIcon onClick={() => scrollFunction("left")} />
+          <div className="left-slider-btn" onClick={() => scrollFunction("left")}>
+            <KeyboardArrowLeftIcon  />
           </div>
         
         <div className="middle-slider-data" ref={ScroolState}>
           <SlideBox />
         </div>
      
-          <div className="right-slider-btn">
-            <KeyboardArrowRightIcon onClick={() => scrollFunction("right")} />
+          <div className="right-slider-btn" onClick={() => scrollFunction("right")}>
+            <KeyboardArrowRightIcon  />
           </div>
        
       </styled.SliderContainer>
